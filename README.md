@@ -13,13 +13,20 @@ ListView内的TextView实现动态显示跑马灯
         我选用的是长按ItemView
         itemView.setOnLongClickListener(new View.OnLongClickListener() {
          public boolean onLongClick(View v) {
+         
                     LogUtil.e("DevEditAdapter","---长按"+getAdapterPosition()+"-----");
+                    
                     tvDevName.setFocusable(true);
+                    
                     tvDevName.requestFocus();
+                    
 
                     itemView.setFocusable(true);
+                    
                     itemView.requestFocus();
+                    
 
                     return true;
+                    
                 }
            });
